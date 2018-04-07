@@ -1,0 +1,30 @@
+
+{
+
+  "description": "test vanessa",
+  "manifest_version": 2,
+  "name": "theme css vanessa",
+  "version": "1.0",
+  "description": "nouveau test vanessa",
+
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+
+
+"permissions":[ "theme"],
+
+
+"content_scripts": [
+  {
+    "matches": ["*://*.mozilla.org/*"],
+    "js": ["background.js"]
+  }
+]
+
+}
